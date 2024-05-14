@@ -7,7 +7,7 @@
     <div class="p-5">
 
       <h1 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">{{ recette.nom }}</h1>
-      <h1>{{ recette.id }}</h1>
+      <!-- <h1>{{ recette.id }}</h1> -->
       <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">{{ recette.desc }}</p>
 
       <div>

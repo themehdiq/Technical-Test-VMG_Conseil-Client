@@ -7,7 +7,7 @@
       "ingredients": "Pâte brisée, Lardons, Crème fraîche, Œufs, fromage râpé",
       "instructions": "Préchauffez le four à 180°C. Étalez la pâte brisée dans un moule à tarte. Répartissez les lardons, battez les œufs avec la crème fraîche, versez le mélange sur les lardons, et saupoudrez de fromage. Cuisez au four pendant 30 à 35 minutes.",
       "realisee": true,
-      "image": "./src/assets/images/recette1.jpg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette1.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "2",
@@ -16,7 +16,7 @@
       "ingredients": "Farine, Lait, Oeufs, Beurre fondu, Sucre.",
       "instructions": "Dans un bol, mélangez la farine, les œufs, le lait, le beurre fondu, et le sucre. Laissez reposer la pâte pendant 30 minutes. Chauffez une poêle, versez une louche de pâte, et faites cuire jusqu'à ce que les bords soient dorés. Retournez et cuisez l'autre côté. Répétez pour le reste de la pâte.",
       "realisee": false,
-      "image": "./src/assets/images/recette2.jpg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette2.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "3",
@@ -25,7 +25,7 @@
       "ingredients": "Oignons, Beurre, Bouillon de bœuf, Pain, Fromage râpé",
       "instructions": "Faites revenir les oignons dans le beurre jusqu'à ce qu'ils soient caramélisés. Ajoutez le bouillon de bœuf et laissez mijoter pendant 30 minutes. Servez avec des tranches de pain gratinées au fromage.",
       "realisee": true,
-      "image": "./src/assets/images/recette3.jpg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette3.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "4",
@@ -34,7 +34,7 @@
       "ingredients": "Poulet, Vin rouge, Champignons, Oignons, Lardons",
       "instructions": "Faites revenir le poulet et les lardons dans une cocotte. Ajoutez les champignons et les oignons, puis versez le vin rouge. Laissez mijoter pendant 1 heure, ou jusqu'à ce que le poulet soit tendre. Servez avec des pommes de terre ou du riz.",
       "realisee": false,
-      "image": "./src/assets/images/recette4.jpg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette4.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "5",
@@ -43,7 +43,7 @@
       "ingredients": "Pommes, Sucre, Beurre, Pâte brisée",
       "instructions": "Préchauffez le four à 180°C. Faites fondre le beurre et le sucre dans un moule à tarte, ajoutez les pommes coupées en tranches. Couvrez avec la pâte brisée et cuisez au four pendant 30 à 35 minutes. Renversez la tarte sur une assiette pour la servir.",
       "realisee": true,
-      "image": "./src/assets/images/recette5.jpeg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette5.jpeg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "6",
@@ -52,32 +52,16 @@
       "ingredients": "Aubergines, Courgettes, Poivrons, Tomates, Oignons",
       "instructions": "Coupez tous les légumes en dés. Faites chauffer de l'huile d'olive dans une grande poêle, puis ajoutez les oignons et les poivrons. Ajoutez les autres légumes et laissez mijoter jusqu'à ce qu'ils soient tendres. Servez chaud ou froid, selon vos préférences.",
       "realisee": false,
-      "image": "./src/assets/images/recette6.jpg"
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette6.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
       "id": "7",
-      "nom": "recette1",
-      "desc": "desc",
-      "ingredients": "ing",
-      "instructions": "instr",
+      "nom": "eriae",
+      "desc": "iuhaziueha",
+      "ingredients": "iuoheiuahe",
+      "instructions": "kjeaiuje",
       "realisee": false,
-      "image": "image1"
-    },
-    {
-      "id": "8",
-      "nom": "recette2",
-      "desc": "desc2",
-      "ingredients": "ing2",
-      "instructions": "insctr2",
-      "realisee": true
-    },
-    {
-      "id": "9",
-      "nom": "fsdnfkj",
-      "desc": "fdsf",
-      "ingredients": "fsdnj",
-      "instructions": "fdsjf",
-      "realisee": false
+      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/MERN_Stack_9437df2ba9_62af1dd3fc.png\n          "
     }
   ]
 }

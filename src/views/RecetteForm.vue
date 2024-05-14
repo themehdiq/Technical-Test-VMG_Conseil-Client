@@ -53,7 +53,7 @@
               Recette</label>
             <div>
               <label for="image-upload"></label>
-              <input type="file" id="image-upload" @click="onFileSelected">
+              <input type="file" @change="onFileSelected" required>
             </div>
           </div>
 
@@ -85,6 +85,9 @@
 <script>
 
 import { useCardStore } from "../stores/useCardStore.js";
+import { supabase } from "../lib/supabaseClient.js";
+
+// console.log(supabase);
 const data = useCardStore();
 const recettesLength = data.recettes.length;
 console.log(recettesLength);
@@ -97,7 +100,8 @@ console.log(recettesLength);
         desc: "",
         ingredients: "",
         instructions: "",
-        image: "",
+        image: null,
+        fileUploaded: false,
       }
     },
     // actions
@@ -109,33 +113,54 @@ console.log(recettesLength);
       this.instructions = "";
       this.image = "";
     },
+    
 
       async submitForm() {
         
-        const newRecette = {
+        if (this.fileUploaded){
+          const newRecette = {
           id: (recettesLength + 1).toString(),
           nom: this.nom,
           desc: this.desc,
           ingredients: this.ingredients,
           instructions: this.instructions,
           realisee: false,
-          image: this.image
-        };
-
-      const res = await fetch("http://localhost:3000/recettes", {
-        method: "POST",
-        headers: {
-        "Content-Type": "application/json",
-        },
-        body: JSON.stringify(newRecette),
-      });
+          image:
+          `https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/${this.image.name}
+          `
+          };
+          
+          const res = await fetch("http://localhost:3000/recettes", {
+          method: "POST",
+          headers: {
+          "Content-Type": "application/json",
+          },
+          body: JSON.stringify(newRecette),
+          });
+        }
+        else {
+          console.log('please wait for the image to be uploaded');
+        }
       
     },
 
-    onFileSelected( event ){
-      this.image = event.target.files[0];
-      console.log(event);
-    }
+      async onFileSelected( event ){
+        this.image = event.target.files[0]
+        if (!this.image) return
+
+        const {data, error} = await supabase.storage
+        .from('recettes_bucket') // replace with your bucket name
+        .upload(`VMG_test_ressources/${this.image.name}`, this.image)
+        
+        if (error) {
+        console.error('Error uploading image:', error)
+        } else {
+        console.log('Image uploaded successfully:', data)
+        this.fileUploaded = true
+        }
+
+    },
+
 
 
   }
