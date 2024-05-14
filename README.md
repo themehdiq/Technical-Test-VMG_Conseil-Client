@@ -1,6 +1,6 @@
 # VMG_test_technique
 
-This template should help get you started developing with Vue 3 in Vite.
+----------- This template should help get you started developing with Vue 3 in Vite.---------------
 
 ## Recommended IDE Setup
 
@@ -27,3 +27,14 @@ npm run dev
 ```sh
 npm run build
 ```
+---------------------------------------------- Info about the application ----------------------------------------
+
+  Database in this application is a json file, passed to JSON Server CLI via this command "npx json-server recettes.json" with the
+help of json-server package, for getting a Rest API http://localhost:{port_number}/recettes
+
+ Note that the source of the images for now is the assets/images directory, working to host them in supabase plateform
+
+ The upload image functionnality is not working for now
+
+
+
