@@ -5,6 +5,5 @@ import HomeRecettes from "../components/HomeRecettes.vue";
 <template>
   <main>
     <HomeRecettes />
-    <TheWelcome />
   </main>
 </template>

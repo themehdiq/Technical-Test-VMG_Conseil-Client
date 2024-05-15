@@ -42,7 +42,7 @@
       "desc": "Une tarte aux pommes caramélisées, cuite à l'envers et renversée avant de servir.",
       "ingredients": "Pommes, Sucre, Beurre, Pâte brisée",
       "instructions": "Préchauffez le four à 180°C. Faites fondre le beurre et le sucre dans un moule à tarte, ajoutez les pommes coupées en tranches. Couvrez avec la pâte brisée et cuisez au four pendant 30 à 35 minutes. Renversez la tarte sur une assiette pour la servir.",
-      "realisee": true,
+      "realisee": false,
       "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette5.jpeg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
@@ -51,17 +51,8 @@
       "desc": "Un plat de légumes méditerranéen, souvent servi comme accompagnement ou plat principal végétarien.",
       "ingredients": "Aubergines, Courgettes, Poivrons, Tomates, Oignons",
       "instructions": "Coupez tous les légumes en dés. Faites chauffer de l'huile d'olive dans une grande poêle, puis ajoutez les oignons et les poivrons. Ajoutez les autres légumes et laissez mijoter jusqu'à ce qu'ils soient tendres. Servez chaud ou froid, selon vos préférences.",
-      "realisee": false,
+      "realisee": true,
       "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette6.jpg?t=2024-05-14T13%3A45%3A48.523Z"
-    },
-    {
-      "id": "7",
-      "nom": "eriae",
-      "desc": "iuhaziueha",
-      "ingredients": "iuoheiuahe",
-      "instructions": "kjeaiuje",
-      "realisee": false,
-      "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/MERN_Stack_9437df2ba9_62af1dd3fc.png\n          "
     }
   ]
 }

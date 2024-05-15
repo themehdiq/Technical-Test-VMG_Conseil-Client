@@ -54,6 +54,10 @@
             <div>
               <label for="image-upload"></label>
               <input type="file" @change="onFileSelected" required>
+              <p><span v-if="uploadInProgress">Upload in Progress, Please wait ...</span><span v-if="fileUploaded">Image
+                  Uploaded
+                  !</span>
+              </p>
             </div>
           </div>
 
@@ -90,7 +94,7 @@ import { supabase } from "../lib/supabaseClient.js";
 // console.log(supabase);
 const data = useCardStore();
 const recettesLength = data.recettes.length;
-console.log(recettesLength);
+// console.log(recettesLength);
 
   export default {
     // state
@@ -102,6 +106,7 @@ console.log(recettesLength);
         instructions: "",
         image: null,
         fileUploaded: false,
+        uploadInProgress: false
       }
     },
     // actions
@@ -126,8 +131,7 @@ console.log(recettesLength);
           instructions: this.instructions,
           realisee: false,
           image:
-          `https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/${this.image.name}
-          `
+          `https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/${this.image.name}`
           };
           
           const res = await fetch("http://localhost:3000/recettes", {
@@ -145,18 +149,26 @@ console.log(recettesLength);
     },
 
       async onFileSelected( event ){
+        this.uploadInProgress = true
+        this.fileUploaded = false
+        console.log(supabase);
         this.image = event.target.files[0]
-        if (!this.image) return
+        if (!this.image) {
+          this.uploadInProgress = false
+        }
 
         const {data, error} = await supabase.storage
         .from('recettes_bucket') // replace with your bucket name
-        .upload(`VMG_test_ressources/${this.image.name}`, this.image)
+        .upload(`VMG_test_ressources/${this.image.name}`, this.image, {
+          upsert: true,
+        })
         
         if (error) {
         console.error('Error uploading image:', error)
         } else {
         console.log('Image uploaded successfully:', data)
         this.fileUploaded = true
+        this.uploadInProgress = false
         }
 
     },

@@ -1,4 +1,4 @@
-import { ref, computed } from "vue";
+// import { ref, computed } from "vue";
 import { defineStore } from "pinia";
 
 async function fetchRecettes() {
@@ -13,6 +13,13 @@ async function fetchRecettes() {
 }
 
 const myRecettes = await fetchRecettes();
+const recetteRealise = myRecettes.filter(
+  (recette) => recette.realisee === true
+);
+const recetteNonRealise = myRecettes.filter(
+  (recette) => recette.realisee === false
+);
+
 console.log(myRecettes);
 
 export const useCardStore = defineStore("card", {
