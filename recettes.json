@@ -33,7 +33,7 @@
       "desc": "Un plat français traditionnel, fait avec du poulet braisé dans du vin rouge, des champignons et des oignons.",
       "ingredients": "Poulet, Vin rouge, Champignons, Oignons, Lardons",
       "instructions": "Faites revenir le poulet et les lardons dans une cocotte. Ajoutez les champignons et les oignons, puis versez le vin rouge. Laissez mijoter pendant 1 heure, ou jusqu'à ce que le poulet soit tendre. Servez avec des pommes de terre ou du riz.",
-      "realisee": false,
+      "realisee": true,
       "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette4.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     },
     {
@@ -51,7 +51,7 @@
       "desc": "Un plat de légumes méditerranéen, souvent servi comme accompagnement ou plat principal végétarien.",
       "ingredients": "Aubergines, Courgettes, Poivrons, Tomates, Oignons",
       "instructions": "Coupez tous les légumes en dés. Faites chauffer de l'huile d'olive dans une grande poêle, puis ajoutez les oignons et les poivrons. Ajoutez les autres légumes et laissez mijoter jusqu'à ce qu'ils soient tendres. Servez chaud ou froid, selon vos préférences.",
-      "realisee": true,
+      "realisee": false,
       "image": "https://hhqtbjgkoiqnocadynhn.supabase.co/storage/v1/object/public/recettes_bucket/VMG_test_ressources/recette6.jpg?t=2024-05-14T13%3A45%3A48.523Z"
     }
   ]

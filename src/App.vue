@@ -33,11 +33,6 @@ import ToolingIcon from "./components/icons/IconTooling.vue";
                   </RouterLink>
                 </nav>
 
-                <nav class="text-white">
-                  <RouterLink class="text-xl text-nowrap" to="upload-image">
-                    upload Test Page
-                  </RouterLink>
-                </nav>
               </div>
             </div>
           </div>

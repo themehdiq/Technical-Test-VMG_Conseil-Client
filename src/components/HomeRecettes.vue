@@ -1,7 +1,7 @@
 <template>
     <section class="bg-blue-50 px-20 py-10">
         <div class="lg:container m-auto">
-            <h2 class="text-4xl font-bold text-red-400 my-7 text-center">
+            <h2 class="text-4xl font-bold text-red-500 my-7 text-center">
                 Liste des Recettes
             </h2>
             <div class="my-11 flex justify-center">
