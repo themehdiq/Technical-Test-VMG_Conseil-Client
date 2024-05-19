@@ -32,9 +32,8 @@ npm run build
   Database in this application is a json file, passed to JSON Server CLI via this command "npx json-server recettes.json" with the
 help of json-server package, for getting a Rest API http://localhost:{port_number}/recettes
 
- Note that the source of the images for now is the assets/images directory, working to host them in supabase plateform
-
- The upload image functionnality is not working for now
+The images are hosted in supabase, linking the supabase plateform to my project, uploading the image to the service and then retreiving
+it for displaying on the website
 
 
 
